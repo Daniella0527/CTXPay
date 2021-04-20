@@ -1,24 +1,24 @@
-20/04/2021 14:42:12 devpinoyLogger Config file loaded !!!
-20/04/2021 14:42:12 devpinoyLogger OR file loaded !!!
-20/04/2021 14:42:19 devpinoyLogger Navigated to : http://204.236.189.117/blog/
-20/04/2021 14:42:21 devpinoyLogger Clicking on an Element : shoptab_XPATH
-20/04/2021 14:42:21 devpinoyLogger Clicking on an Element : SHaddtocart_XPATH
-20/04/2021 14:42:21 devpinoyLogger Clicking on an Element : SHaddtocart_XPATH
-20/04/2021 14:42:27 devpinoyLogger Clicking on an Element : SHviewcart_XPATH
-20/04/2021 14:42:29 devpinoyLogger Clicking on an Element : CAcheckoutbtn_XPATH
-20/04/2021 14:42:29 devpinoyLogger Typing in an Element : CHfname_XPATH entered value as : daniella
-20/04/2021 14:42:29 devpinoyLogger Typing in an Element : CHlname_XPATH entered value as : columbres
-20/04/2021 14:42:30 devpinoyLogger Typing in an Element : CHcompany_XPATH entered value as : xurpas
-20/04/2021 14:42:30 devpinoyLogger Selecting from an element : CHcountry_ID value as : Philippines
-20/04/2021 14:42:30 devpinoyLogger Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
-20/04/2021 14:42:30 devpinoyLogger Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
-20/04/2021 14:42:30 devpinoyLogger Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
-20/04/2021 14:42:30 devpinoyLogger Selecting from an element : CHregion_ID value as : Metro Manila
-20/04/2021 14:42:30 devpinoyLogger Typing in an Element : CHpostalcode_XPATH entered value as : 1552
-20/04/2021 14:42:31 devpinoyLogger Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
-20/04/2021 14:42:31 devpinoyLogger Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
-20/04/2021 14:42:31 devpinoyLogger Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
-20/04/2021 14:42:31 devpinoyLogger Clicking on an Element : CHplaceorderbtn_XPATH
-20/04/2021 14:42:41 devpinoyLogger Clicking on an Element : PFOpaynowbtn_XPATH
-20/04/2021 14:42:48 devpinoyLogger Clicking on an Element : CTXcashpayments_XPATH
-20/04/2021 14:42:48 devpinoyLogger Clicking on an Element : CTXproceedbtn_XPATH
+20/04/2021 15:25:54 devpinoyLogger Config file loaded !!!
+20/04/2021 15:25:54 devpinoyLogger OR file loaded !!!
+20/04/2021 15:26:02 devpinoyLogger Navigated to : http://204.236.189.117/blog/
+20/04/2021 15:26:04 devpinoyLogger Clicking on an Element : shoptab_XPATH
+20/04/2021 15:26:04 devpinoyLogger Clicking on an Element : SHaddtocart_XPATH
+20/04/2021 15:26:04 devpinoyLogger Clicking on an Element : SHaddtocart_XPATH
+20/04/2021 15:26:06 devpinoyLogger Clicking on an Element : SHviewcart_XPATH
+20/04/2021 15:26:08 devpinoyLogger Clicking on an Element : CAcheckoutbtn_XPATH
+20/04/2021 15:26:08 devpinoyLogger Typing in an Element : CHfname_XPATH entered value as : daniella
+20/04/2021 15:26:08 devpinoyLogger Typing in an Element : CHlname_XPATH entered value as : columbres
+20/04/2021 15:26:08 devpinoyLogger Typing in an Element : CHcompany_XPATH entered value as : xurpas
+20/04/2021 15:26:09 devpinoyLogger Selecting from an element : CHcountry_ID value as : Philippines
+20/04/2021 15:26:09 devpinoyLogger Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
+20/04/2021 15:26:09 devpinoyLogger Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
+20/04/2021 15:26:09 devpinoyLogger Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
+20/04/2021 15:26:09 devpinoyLogger Selecting from an element : CHregion_ID value as : Metro Manila
+20/04/2021 15:26:09 devpinoyLogger Typing in an Element : CHpostalcode_XPATH entered value as : 1552
+20/04/2021 15:26:09 devpinoyLogger Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
+20/04/2021 15:26:10 devpinoyLogger Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
+20/04/2021 15:26:10 devpinoyLogger Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
+20/04/2021 15:26:10 devpinoyLogger Clicking on an Element : CHplaceorderbtn_XPATH
+20/04/2021 15:26:15 devpinoyLogger Clicking on an Element : PFOpaynowbtn_XPATH
+20/04/2021 15:26:21 devpinoyLogger Clicking on an Element : CTXcashpayments_XPATH
+20/04/2021 15:26:21 devpinoyLogger Clicking on an Element : CTXproceedbtn_XPATH

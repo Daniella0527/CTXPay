@@ -1,39 +1,39 @@
-14:42:12,653 DEBUG devpinoyLogger:75 - Config file loaded !!!
-14:42:12,658 DEBUG devpinoyLogger:90 - OR file loaded !!!
-14:42:19,314 DEBUG devpinoyLogger:138 - Navigated to : http://204.236.189.117/blog/
-14:42:21,074 DEBUG devpinoyLogger:167 - Clicking on an Element : shoptab_XPATH
-14:42:21,240 DEBUG devpinoyLogger:167 - Clicking on an Element : SHaddtocart_XPATH
-14:42:21,318 DEBUG devpinoyLogger:167 - Clicking on an Element : SHaddtocart_XPATH
-14:42:27,657 DEBUG devpinoyLogger:167 - Clicking on an Element : SHviewcart_XPATH
-14:42:27,694 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-14:42:27,696 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-14:42:27,700 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-14:42:27,701 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-14:42:27,702 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-14:42:29,557 DEBUG devpinoyLogger:167 - Clicking on an Element : CAcheckoutbtn_XPATH
-14:42:29,743 DEBUG devpinoyLogger:181 - Typing in an Element : CHfname_XPATH entered value as : daniella
-14:42:29,948 DEBUG devpinoyLogger:181 - Typing in an Element : CHlname_XPATH entered value as : columbres
-14:42:30,117 DEBUG devpinoyLogger:181 - Typing in an Element : CHcompany_XPATH entered value as : xurpas
-14:42:30,236 DEBUG devpinoyLogger:202 - Selecting from an element : CHcountry_ID value as : Philippines
-14:42:30,375 DEBUG devpinoyLogger:181 - Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
-14:42:30,506 DEBUG devpinoyLogger:181 - Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
-14:42:30,645 DEBUG devpinoyLogger:181 - Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
-14:42:30,723 DEBUG devpinoyLogger:202 - Selecting from an element : CHregion_ID value as : Metro Manila
-14:42:30,840 DEBUG devpinoyLogger:181 - Typing in an Element : CHpostalcode_XPATH entered value as : 1552
-14:42:31,001 DEBUG devpinoyLogger:181 - Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
-14:42:31,162 DEBUG devpinoyLogger:181 - Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
-14:42:31,344 DEBUG devpinoyLogger:181 - Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
-14:42:31,924 DEBUG devpinoyLogger:167 - Clicking on an Element : CHplaceorderbtn_XPATH
-14:42:31,926 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-14:42:31,926 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-14:42:31,927 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-14:42:31,927 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-14:42:31,928 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-14:42:41,084 DEBUG devpinoyLogger:167 - Clicking on an Element : PFOpaynowbtn_XPATH
-14:42:48,704 DEBUG devpinoyLogger:167 - Clicking on an Element : CTXcashpayments_XPATH
-14:42:48,797 DEBUG devpinoyLogger:167 - Clicking on an Element : CTXproceedbtn_XPATH
-14:42:48,798 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-14:42:48,799 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-14:42:48,799 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-14:42:48,800 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-14:42:48,800 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+15:25:54,130 DEBUG devpinoyLogger:75 - Config file loaded !!!
+15:25:54,137 DEBUG devpinoyLogger:90 - OR file loaded !!!
+15:26:02,710 DEBUG devpinoyLogger:138 - Navigated to : http://204.236.189.117/blog/
+15:26:04,114 DEBUG devpinoyLogger:167 - Clicking on an Element : shoptab_XPATH
+15:26:04,218 DEBUG devpinoyLogger:167 - Clicking on an Element : SHaddtocart_XPATH
+15:26:04,288 DEBUG devpinoyLogger:167 - Clicking on an Element : SHaddtocart_XPATH
+15:26:06,641 DEBUG devpinoyLogger:167 - Clicking on an Element : SHviewcart_XPATH
+15:26:06,673 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+15:26:06,674 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+15:26:06,676 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+15:26:06,678 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+15:26:06,679 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+15:26:08,475 DEBUG devpinoyLogger:167 - Clicking on an Element : CAcheckoutbtn_XPATH
+15:26:08,690 DEBUG devpinoyLogger:181 - Typing in an Element : CHfname_XPATH entered value as : daniella
+15:26:08,845 DEBUG devpinoyLogger:181 - Typing in an Element : CHlname_XPATH entered value as : columbres
+15:26:08,998 DEBUG devpinoyLogger:181 - Typing in an Element : CHcompany_XPATH entered value as : xurpas
+15:26:09,112 DEBUG devpinoyLogger:202 - Selecting from an element : CHcountry_ID value as : Philippines
+15:26:09,297 DEBUG devpinoyLogger:181 - Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
+15:26:09,440 DEBUG devpinoyLogger:181 - Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
+15:26:09,583 DEBUG devpinoyLogger:181 - Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
+15:26:09,661 DEBUG devpinoyLogger:202 - Selecting from an element : CHregion_ID value as : Metro Manila
+15:26:09,807 DEBUG devpinoyLogger:181 - Typing in an Element : CHpostalcode_XPATH entered value as : 1552
+15:26:09,980 DEBUG devpinoyLogger:181 - Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
+15:26:10,164 DEBUG devpinoyLogger:181 - Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
+15:26:10,311 DEBUG devpinoyLogger:181 - Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
+15:26:10,918 DEBUG devpinoyLogger:167 - Clicking on an Element : CHplaceorderbtn_XPATH
+15:26:10,921 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+15:26:10,921 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+15:26:10,922 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+15:26:10,922 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+15:26:10,923 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+15:26:15,556 DEBUG devpinoyLogger:167 - Clicking on an Element : PFOpaynowbtn_XPATH
+15:26:21,224 DEBUG devpinoyLogger:167 - Clicking on an Element : CTXcashpayments_XPATH
+15:26:21,312 DEBUG devpinoyLogger:167 - Clicking on an Element : CTXproceedbtn_XPATH
+15:26:21,313 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+15:26:21,313 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+15:26:21,313 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+15:26:21,314 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+15:26:21,314 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
