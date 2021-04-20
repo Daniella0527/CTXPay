@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+     
+    <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      <listener class-name="com.multisys.listeners.CustomListeners"/>
+  </listeners>
+    
+    
+	<test name="Add to Cart">
+		<classes>
+			<class name="com.multisys.testcases.AddProductToCart" />
+			
+		</classes>
+	</test> <!-- Test -->
+	
+	
+		<test name="Place Order">
+		<classes>
+			<class name="com.multisys.testcases.PlaceOrder" />			
+		</classes>
+	</test> <!-- Test -->
+	
+			<test name="Pay Using Cah Payments">
+		<classes>
+			<class name="com.multisys.testcases.PayUsingCashPayments" />			
+		</classes>
+	</test> <!-- Test -->
+
+	
+	
+</suite> <!-- Suite -->
+
