@@ -29,6 +29,12 @@
 		</classes>
 	</test> <!-- Test -->
 
+
+<test name="Base Test">
+		<classes>
+			<class name="com.multisys.testcases.BaseTest" />			
+		</classes>
+	</test> <!-- Test -->
 	
 	
 </suite> <!-- Suite -->
