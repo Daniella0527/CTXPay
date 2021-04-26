@@ -18,7 +18,7 @@
 	
 	<test name="Select Payment Method">
 		<classes>
-			<class name="com.multisys.testcases.cash.PayThruCash" />			
+			<class name="com.multisys.testcases.creditcard.PayThruCreditCard" />			
 		</classes>
 	</test> <!-- Test -->
 	
