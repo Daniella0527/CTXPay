@@ -11,17 +11,18 @@ public class ShopPage extends Page {
 		return new ProductDetailsPage();
 	}
 
-	public void SortProducts(String sortby) {
+	public void sortProducts(String sortby) {
 
 		type("SHsort_XPATH", sortby);
 	}
+	
 
-	public void AddToCart() {
+	public void addToCart() {
 
 		click("SHaddtocart_XPATH");
 	}
 	
-	public void ViewCart() {
+	public void viewCart() {
 
 		click("SHviewcart_XPATH");
 	}

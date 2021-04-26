@@ -7,6 +7,7 @@ public class PayForOrderPage extends Page {
 public CTXPayPage paynow(){
 		
 		click("PFOpaynowbtn_XPATH");
+		
 		return new CTXPayPage();
 }
 

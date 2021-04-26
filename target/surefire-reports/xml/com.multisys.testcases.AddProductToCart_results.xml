@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Add to Cart"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.528">
+  <properties />
+  
+  
+            <testcase name="addProductToCart" time="3.528" classname="com.multisys.testcases.AddProductToCart" />
+      
+</testsuite>

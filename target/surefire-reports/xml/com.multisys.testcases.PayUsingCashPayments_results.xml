@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Pay Using Cah Payments"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.296">
+  <properties />
+  
+  
+            <testcase name="payUsingCashPayments" time="10.296" classname="com.multisys.testcases.PayUsingCashPayments" />
+      
+</testsuite>

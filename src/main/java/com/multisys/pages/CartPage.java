@@ -4,13 +4,13 @@ import com.multisys.base.Page;
 
 public class CartPage extends Page {
 
-public void EnterQuantity(String quantity){
+public void enterQuantity(String quantity){
 		
 		type("CAquantity_XPATH", quantity);
 }
 
 
-public void EnterCouponCode(String code){
+public void enterCouponCode(String code){
 	
 	type("CAcouponcode_XPATH", code);
 }

@@ -75,7 +75,6 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 	public void onTestStart(ITestResult arg0) {
 
 		test = rep.startTest(arg0.getName().toUpperCase());
-	
 	}
 
 	public void onTestSuccess(ITestResult arg0) {

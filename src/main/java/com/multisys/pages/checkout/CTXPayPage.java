@@ -1,22 +1,35 @@
 package com.multisys.pages.checkout;
 
 import com.multisys.base.Page;
+import com.multisys.pages.ewallets.Ewallets;
 
 public class CTXPayPage extends Page {
 
-public void CashPayment(){
-		
-		click("CTXcashpayments_XPATH");
 	
+public CreditCard creditCardPayment(){
+		
+		click("MPcreditCard_XPATH");
+	return new CreditCard();
 }
 
-public void proceedPayment(){
+public Ewallets ewalletsPayment(){
 	
-	click("CTXproceedbtn_XPATH");
+	click("EPeWallets_XPATH");
+
+	return new Ewallets();
+}
+
+public void cashPayment(){
+	
+	click("CPcashpayments_XPATH");
+	click("CPproceedbtn_XPATH");
+
 }
 
 public void slctOtherPM(){
 	
 	click("CTXbackbtn_XPATH");
+
+	
 }
 }

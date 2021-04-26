@@ -24,7 +24,6 @@ public class TopMenu {
 	WebDriver driver;
 
 	public TopMenu(WebDriver driver) {
-
 		this.driver = driver;
 	}
 

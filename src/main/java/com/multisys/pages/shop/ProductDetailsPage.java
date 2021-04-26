@@ -1,13 +1,22 @@
 package com.multisys.pages.shop;
 
+import org.openqa.selenium.JavascriptExecutor;
+
 import com.multisys.base.Page;
 
 public class ProductDetailsPage extends Page {
 	
 public void EnterQuantity(String quantity){
-		
-		type("PRquantity_XPATH", quantity);
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	 js.executeScript("window.scrollBy(0,300)");
+	 type("PRquantity_XPATH", quantity);
 }
+
+/*public void EnterQuantity(){
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	 js.executeScript("window.scrollBy(0,300)");
+	type("PRquantity_XPATH", "2");
+}*/
 
 public void ViewProductDesc(){
 	
