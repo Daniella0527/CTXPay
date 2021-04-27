@@ -24,7 +24,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,6 +37,9 @@ import org.testng.Reporter;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import com.multisys.utilities.ExcelReader;
 import com.multisys.utilities.ExtentManager;
 import com.multisys.utilities.Utilities;
@@ -84,8 +90,6 @@ String os = System.getProperty("os.name").toLowerCase();
 	public Page() {
 		
 		System.setProperty("userApp.root", getUserAppDirectory());
-	
-		//System.setProperty("userApp.root", ad.getUserAppDirectory());
 		
 		if (driver == null) {
 
@@ -132,12 +136,10 @@ String os = System.getProperty("os.name").toLowerCase();
 			}
 
 			config.setProperty("browser", browser);
-
-			
 			
 			if (config.getProperty("browser").equals("firefox")) {
-
-				// System.setProperty("webdriver.gecko.driver", "gecko.exe");
+				//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\com\\multisys\\executables\\geckodriver.exe");	
+				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 
 			} else if (config.getProperty("browser").equals("chrome")) {
@@ -155,11 +157,16 @@ String os = System.getProperty("os.name").toLowerCase();
 			options.addArguments("--disable-infobars");
 
 			driver = new ChromeDriver(options);
-			}else if (config.getProperty("browser").equals("ie")) {
+			}
+			else if (config.getProperty("browser").equals("ie")) {
 
-				System.setProperty("webdriver.ie.driver",
-						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\IEDriverServer.exe");
-				driver = new InternetExplorerDriver();
+				//System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\com\\multisys\\executables\\IEDriverServer.exe");
+				
+				WebDriverManager.iedriver().setup();
+				
+				InternetExplorerOptions capabilities = new InternetExplorerOptions();
+				capabilities.ignoreZoomSettings();
+				driver = new InternetExplorerDriver(capabilities);
 
 			}
 			driver.get(config.getProperty("testsiteurl"));
