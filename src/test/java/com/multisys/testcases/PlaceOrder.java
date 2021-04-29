@@ -1,49 +1,49 @@
 package com.multisys.testcases;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
-
-import java.util.Hashtable;
-
-import org.testng.annotations.Test;
+import org.testng.Assert;
 
 import com.multisys.base.Page;
 import com.multisys.pages.CartPage;
-import com.multisys.pages.checkout.CheckoutPage;
-import com.multisys.pages.checkout.PayForOrderPage;
-import com.multisys.pages.shop.ProductDetailsPage;
-import com.multisys.pages.shop.ShopPage;
-import com.multisys.utilities.Utilities;
+import com.multisys.pages.CheckoutPage;
+import com.multisys.pages.PayForOrderPage;
+import com.multisys.pages.ProductDetailsPage;
+import com.multisys.pages.ShopPage;
 
 
-public class PlaceOrder {
+public class PlaceOrder extends Page{
+
 	
-	@Test(dataProviderClass=Utilities.class,dataProvider="dp")
-	public void addProductToCart(Hashtable<String,String> data) throws InterruptedException {
-		
+	public void addProductToCart() throws Exception {
 		ShopPage shop = Page.menu.gotoShop();
 		ProductDetailsPage pdpage = shop.gotoProductDetails();
 		
-		pdpage.EnterQuantity(data.get("Quantity"));
+		pdpage.EnterQuantity();
 		Thread.sleep(2000);
 		pdpage.AddToCart();
+		Assert.assertTrue(isElementPresent("PRviewcart_XPATH"));
 		
 	}	
 	
-	@Test
 	public void checkout(){
+		
 		CartPage cart = Page.menu.gotoCart();
 		cart.proceedToCheckout();
+		Assert.assertTrue(isElementPresent("CHplaceorderbtn_XPATH"));
 	}
 	
-	@Test(dataProviderClass=Utilities.class,dataProvider="dp")
-	public void enterBillingAddress(Hashtable<String,String> data) throws InterruptedException{
+	public void enterBillingAddress() throws Exception{
 		CheckoutPage checkout = new CheckoutPage();
-		checkout.EnterBillingAddress(data.get("First Name"),data.get("Last Name"), data.get("Company Name"),data.get("Country"), data.get("House # & Street name"), data.get("Barangay"), data.get("City"), data.get("Region"), data.get("Postal Code"), data.get("Phone Number"), data.get("Email Address"), data.get("Order Notes"));
-		Thread.sleep(5000);
+		checkout.EnterBillingAddress();
+		Thread.sleep(2000);	
 		checkout.placeOrder();
+		Assert.assertTrue(isElementPresent("PFOpaynowbtn_XPATH"));
+		
 		PayForOrderPage pfo = new PayForOrderPage();
 		pfo.paynow();
+		Assert.assertTrue(isElementPresent("CTXlogo_XPATH"));
 		
 	}
 	
-
-}
+	}

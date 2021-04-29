@@ -1,4 +1,4 @@
-package com.multisys.pages.shop;
+package com.multisys.pages;
 
 import com.multisys.base.Page;
 
@@ -7,7 +7,6 @@ public class ShopPage extends Page {
 	public ProductDetailsPage gotoProductDetails() {
 
 		click("SHproduct_XPATH");
-
 		return new ProductDetailsPage();
 	}
 

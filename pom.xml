@@ -22,7 +22,6 @@
 			<version>4.0.0-beta-2</version>
 		</dependency>
 
-
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -130,7 +129,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M3</version>
+				<version>3.0.0-M4</version>
 				<configuration>
 					<testFailureIgnore> false </testFailureIgnore>
 					<suiteXmlFiles>
@@ -138,7 +137,6 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-
 		</plugins>
 
 		<testResources>

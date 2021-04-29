@@ -30,7 +30,7 @@ public class Utilities extends Page {
 
 	}
 
-	@DataProvider(name="dp")
+	@DataProvider(name = "dp")
 	public Object[][] getData(Method m) {
 
 		String sheetName = m.getName();
@@ -38,13 +38,13 @@ public class Utilities extends Page {
 		int cols = excel.getColumnCount(sheetName);
 
 		Object[][] data = new Object[rows - 1][1];
-		
-		Hashtable<String,String> table = null;
+
+		Hashtable<String, String> table = null;
 
 		for (int rowNum = 2; rowNum <= rows; rowNum++) { // 2
 
-			table = new Hashtable<String,String>();
-			
+			table = new Hashtable<String, String>();
+
 			for (int colNum = 0; colNum < cols; colNum++) {
 
 				// data[0][0]
@@ -57,31 +57,28 @@ public class Utilities extends Page {
 		return data;
 
 	}
-	
-	
-	public static boolean isTestRunnable(String testName, ExcelReader excel){
-		
-		String sheetName="test_suite";
+
+	public static boolean isTestRunnable(String testName, ExcelReader excel) {
+
+		String sheetName = "test_suite";
 		int rows = excel.getRowCount(sheetName);
-		
-		
-		for(int rNum=2; rNum<=rows; rNum++){
-			
+
+		for (int rNum = 1; rNum <= rows; rNum++) {
+
 			String testCase = excel.getCellData(sheetName, "TCID", rNum);
-			
-			if(testCase.equalsIgnoreCase(testName)){
-				
+
+			if (testCase.equalsIgnoreCase(testName)) {
+
 				String runmode = excel.getCellData(sheetName, "Runmode", rNum);
-				
-				if(runmode.equalsIgnoreCase("Y"))
+
+				if (runmode.equalsIgnoreCase("Y"))
 					return true;
 				else
 					return false;
 			}
-			
-			
+
 		}
 		return false;
 	}
-	
+
 }

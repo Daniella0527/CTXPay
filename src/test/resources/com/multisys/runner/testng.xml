@@ -8,17 +8,72 @@
       <listener class-name="com.multisys.listeners.CustomListeners"/>
   </listeners>
   
-	<test name="Place Order">
+  	<test name="Happy Path">
 		<classes>
-			<class name="com.multisys.testcases.PlaceOrder" />
+			<class name="com.multisys.testcases.HappyPath" />			
+		</classes>
+	</test> <!-- Test -->
+  
+	
+	<test name="Pay Thru Cash">
+		<classes>
+			<class name="com.multisys.testcases.cash.PayThruCash" />			
 		</classes>
 	</test> <!-- Test -->
 	
 	
+	<test name="Pay Thru Gcash">
+		<classes>
+			<class name="com.multisys.testcases.ewallets.PayThruGcash" />			
+		</classes>
+	</test> <!-- Test -->
 	
-	<test name="Select Payment Method">
+	<test name="Pay Thru AliPay">
+		<classes>
+			<class name="com.multisys.testcases.ewallets.PayThruAliPay" />			
+		</classes>
+	</test> <!-- Test -->
+	
+		<test name="Pay Thru AllEasy">
+		<classes>
+			<class name="com.multisys.testcases.ewallets.PayThruAllEasy" />			
+		</classes>
+	</test> <!-- Test -->
+	
+			<test name="Pay Thru CoinsPH">
+		<classes>
+			<class name="com.multisys.testcases.ewallets.PayThruCoinsPH" />			
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Pay Thru GrabPay">
+		<classes>
+			<class name="com.multisys.testcases.ewallets.PayThruGrabPay" />			
+		</classes>
+	</test> <!-- Test -->
+	
+		<test name="Pay Thru UnionPay">
+		<classes>
+			<class name="com.multisys.testcases.ewallets.PayThruUnionPay" />			
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Pay Thru WeChatPay">
+		<classes>
+			<class name="com.multisys.testcases.ewallets.PayThruWeChatPay" />			
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	<test name="Pay Thru Visa">
 		<classes>
 			<class name="com.multisys.testcases.creditcard.PayThruVisa" />			
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Pay Thru MasterCard">
+		<classes>
+			<class name="com.multisys.testcases.creditcard.PayThruMasterCard" />			
 		</classes>
 	</test> <!-- Test -->
 	
@@ -28,6 +83,7 @@
 		</classes>
 	</test> <!-- Test -->
 
+	  
 	
 	
 </suite> <!-- Suite -->

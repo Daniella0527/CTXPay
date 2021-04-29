@@ -1,12 +1,250 @@
-15:01:21,711 DEBUG devpinoyLogger:85 - Config file loaded !!!
-15:01:21,716 DEBUG devpinoyLogger:100 - OR file loaded !!!
-15:01:29,059 DEBUG devpinoyLogger:148 - Navigated to : http://204.236.189.117/blog/
-15:01:31,848 DEBUG devpinoyLogger:177 - Clicking on an Element : shoptab_XPATH
-15:01:31,934 DEBUG devpinoyLogger:177 - Clicking on an Element : SHaddtocart_XPATH
-15:01:31,999 DEBUG devpinoyLogger:177 - Clicking on an Element : SHaddtocart_XPATH
-15:01:33,812 DEBUG devpinoyLogger:177 - Clicking on an Element : SHviewcart_XPATH
-15:01:33,861 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-15:01:33,863 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-15:01:33,865 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-15:01:33,868 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-15:01:33,869 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:34:17,527 DEBUG devpinoyLogger:103 - Config file loaded !!!
+14:34:17,534 DEBUG devpinoyLogger:118 - OR file loaded !!!
+14:34:25,206 DEBUG devpinoyLogger:170 - Navigated to : http://204.236.189.117/blog/
+14:34:26,467 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+14:34:26,469 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+14:34:26,475 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+14:34:26,478 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+14:34:26,479 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:34:28,364 DEBUG devpinoyLogger:207 - Clicking on an Element : shoptab_XPATH
+14:34:30,249 DEBUG devpinoyLogger:207 - Clicking on an Element : SHproduct_XPATH
+14:34:30,788 DEBUG devpinoyLogger:234 - Typing in an Element : PRquantity_XPATH entered value as : 1
+14:34:34,059 DEBUG devpinoyLogger:207 - Clicking on an Element : PRaddtocart_XPATH
+14:34:36,219 DEBUG devpinoyLogger:207 - Clicking on an Element : carttab_XPATH
+14:34:37,757 DEBUG devpinoyLogger:207 - Clicking on an Element : CAcheckoutbtn_XPATH
+14:34:38,250 DEBUG devpinoyLogger:234 - Typing in an Element : CHfname_XPATH entered value as : daniella
+14:34:38,503 DEBUG devpinoyLogger:234 - Typing in an Element : CHlname_XPATH entered value as : columbres
+14:34:38,709 DEBUG devpinoyLogger:234 - Typing in an Element : CHcompany_XPATH entered value as : xurpas
+14:34:38,815 DEBUG devpinoyLogger:253 - Selecting from an element : CHcountry_ID value as : Philippines
+14:34:39,048 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
+14:34:39,256 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
+14:34:39,472 DEBUG devpinoyLogger:234 - Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
+14:34:39,562 DEBUG devpinoyLogger:253 - Selecting from an element : CHregion_ID value as : Metro Manila
+14:34:39,788 DEBUG devpinoyLogger:234 - Typing in an Element : CHpostalcode_XPATH entered value as : 1552
+14:34:40,250 DEBUG devpinoyLogger:234 - Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
+14:34:40,486 DEBUG devpinoyLogger:234 - Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
+14:34:40,743 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
+14:34:43,015 DEBUG devpinoyLogger:207 - Clicking on an Element : CHplaceorderbtn_XPATH
+14:34:47,659 DEBUG devpinoyLogger:207 - Clicking on an Element : PFOpaynowbtn_XPATH
+14:34:50,594 DEBUG devpinoyLogger:207 - Clicking on an Element : CPcashpayments_XPATH
+14:34:50,750 DEBUG devpinoyLogger:207 - Clicking on an Element : CPproceedbtn_XPATH
+14:34:50,752 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+14:34:50,753 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+14:34:50,753 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+14:34:50,754 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+14:34:50,755 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:34:59,424 DEBUG devpinoyLogger:207 - Clicking on an Element : shoptab_XPATH
+14:35:00,893 DEBUG devpinoyLogger:207 - Clicking on an Element : SHproduct_XPATH
+14:35:01,377 DEBUG devpinoyLogger:234 - Typing in an Element : PRquantity_XPATH entered value as : 1
+14:35:04,458 DEBUG devpinoyLogger:207 - Clicking on an Element : PRaddtocart_XPATH
+14:35:05,678 DEBUG devpinoyLogger:207 - Clicking on an Element : carttab_XPATH
+14:35:07,289 DEBUG devpinoyLogger:207 - Clicking on an Element : CAcheckoutbtn_XPATH
+14:35:08,084 DEBUG devpinoyLogger:234 - Typing in an Element : CHfname_XPATH entered value as : daniella
+14:35:08,311 DEBUG devpinoyLogger:234 - Typing in an Element : CHlname_XPATH entered value as : columbres
+14:35:08,533 DEBUG devpinoyLogger:234 - Typing in an Element : CHcompany_XPATH entered value as : xurpas
+14:35:08,896 DEBUG devpinoyLogger:253 - Selecting from an element : CHcountry_ID value as : Philippines
+14:35:09,463 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
+14:35:09,712 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
+14:35:10,041 DEBUG devpinoyLogger:234 - Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
+14:35:10,143 DEBUG devpinoyLogger:253 - Selecting from an element : CHregion_ID value as : Metro Manila
+14:35:10,378 DEBUG devpinoyLogger:234 - Typing in an Element : CHpostalcode_XPATH entered value as : 1552
+14:35:10,647 DEBUG devpinoyLogger:234 - Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
+14:35:10,883 DEBUG devpinoyLogger:234 - Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
+14:35:11,112 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
+14:35:13,287 DEBUG devpinoyLogger:207 - Clicking on an Element : CHplaceorderbtn_XPATH
+14:35:16,753 DEBUG devpinoyLogger:207 - Clicking on an Element : PFOpaynowbtn_XPATH
+14:35:19,282 DEBUG devpinoyLogger:207 - Clicking on an Element : EPeWallets_XPATH
+14:35:20,161 DEBUG devpinoyLogger:207 - Clicking on an Element : EPgcash_XPATH
+14:35:20,317 DEBUG devpinoyLogger:207 - Clicking on an Element : EPproceedbtn_XPATH
+14:35:26,745 DEBUG devpinoyLogger:234 - Typing in an Element : Gnumber_XPATH entered value as : 9610596387
+14:35:26,933 DEBUG devpinoyLogger:207 - Clicking on an Element : Gnextbtn_XPATH
+14:35:26,934 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+14:35:26,934 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+14:35:26,934 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+14:35:26,935 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+14:35:26,935 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:35:35,783 DEBUG devpinoyLogger:207 - Clicking on an Element : shoptab_XPATH
+14:35:36,759 DEBUG devpinoyLogger:207 - Clicking on an Element : SHproduct_XPATH
+14:35:37,313 DEBUG devpinoyLogger:234 - Typing in an Element : PRquantity_XPATH entered value as : 1
+14:35:40,403 DEBUG devpinoyLogger:207 - Clicking on an Element : PRaddtocart_XPATH
+14:35:41,864 DEBUG devpinoyLogger:207 - Clicking on an Element : carttab_XPATH
+14:35:43,115 DEBUG devpinoyLogger:207 - Clicking on an Element : CAcheckoutbtn_XPATH
+14:35:43,514 DEBUG devpinoyLogger:234 - Typing in an Element : CHfname_XPATH entered value as : daniella
+14:35:43,759 DEBUG devpinoyLogger:234 - Typing in an Element : CHlname_XPATH entered value as : columbres
+14:35:43,970 DEBUG devpinoyLogger:234 - Typing in an Element : CHcompany_XPATH entered value as : xurpas
+14:35:44,061 DEBUG devpinoyLogger:253 - Selecting from an element : CHcountry_ID value as : Philippines
+14:35:44,339 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
+14:35:44,586 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
+14:35:44,859 DEBUG devpinoyLogger:234 - Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
+14:35:44,943 DEBUG devpinoyLogger:253 - Selecting from an element : CHregion_ID value as : Metro Manila
+14:35:45,158 DEBUG devpinoyLogger:234 - Typing in an Element : CHpostalcode_XPATH entered value as : 1552
+14:35:45,410 DEBUG devpinoyLogger:234 - Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
+14:35:45,677 DEBUG devpinoyLogger:234 - Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
+14:35:45,910 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
+14:35:48,113 DEBUG devpinoyLogger:207 - Clicking on an Element : CHplaceorderbtn_XPATH
+14:35:51,568 DEBUG devpinoyLogger:207 - Clicking on an Element : PFOpaynowbtn_XPATH
+14:35:54,616 DEBUG devpinoyLogger:207 - Clicking on an Element : EPeWallets_XPATH
+14:35:55,517 DEBUG devpinoyLogger:207 - Clicking on an Element : EPaliPay_XPATH
+14:35:55,645 DEBUG devpinoyLogger:207 - Clicking on an Element : EPproceedbtn_XPATH
+14:35:55,647 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+14:35:55,648 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+14:35:55,648 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+14:35:55,649 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+14:35:55,649 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:36:04,163 DEBUG devpinoyLogger:207 - Clicking on an Element : shoptab_XPATH
+14:36:05,096 DEBUG devpinoyLogger:207 - Clicking on an Element : SHproduct_XPATH
+14:36:05,528 DEBUG devpinoyLogger:234 - Typing in an Element : PRquantity_XPATH entered value as : 1
+14:36:08,468 DEBUG devpinoyLogger:207 - Clicking on an Element : PRaddtocart_XPATH
+14:36:09,913 DEBUG devpinoyLogger:207 - Clicking on an Element : carttab_XPATH
+14:36:11,132 DEBUG devpinoyLogger:207 - Clicking on an Element : CAcheckoutbtn_XPATH
+14:36:11,553 DEBUG devpinoyLogger:234 - Typing in an Element : CHfname_XPATH entered value as : daniella
+14:36:11,768 DEBUG devpinoyLogger:234 - Typing in an Element : CHlname_XPATH entered value as : columbres
+14:36:11,994 DEBUG devpinoyLogger:234 - Typing in an Element : CHcompany_XPATH entered value as : xurpas
+14:36:12,073 DEBUG devpinoyLogger:253 - Selecting from an element : CHcountry_ID value as : Philippines
+14:36:12,296 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
+14:36:12,535 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
+14:36:12,833 DEBUG devpinoyLogger:234 - Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
+14:36:12,932 DEBUG devpinoyLogger:253 - Selecting from an element : CHregion_ID value as : Metro Manila
+14:36:13,167 DEBUG devpinoyLogger:234 - Typing in an Element : CHpostalcode_XPATH entered value as : 1552
+14:36:13,473 DEBUG devpinoyLogger:234 - Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
+14:36:13,750 DEBUG devpinoyLogger:234 - Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
+14:36:14,018 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
+14:36:16,243 DEBUG devpinoyLogger:207 - Clicking on an Element : CHplaceorderbtn_XPATH
+14:36:19,646 DEBUG devpinoyLogger:207 - Clicking on an Element : PFOpaynowbtn_XPATH
+14:36:22,291 DEBUG devpinoyLogger:207 - Clicking on an Element : EPeWallets_XPATH
+14:36:23,163 DEBUG devpinoyLogger:207 - Clicking on an Element : EPaliPay_XPATH
+14:36:23,329 DEBUG devpinoyLogger:207 - Clicking on an Element : EPproceedbtn_XPATH
+14:36:23,330 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+14:36:23,331 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+14:36:23,331 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+14:36:23,332 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+14:36:23,332 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:36:32,047 DEBUG devpinoyLogger:207 - Clicking on an Element : shoptab_XPATH
+14:36:33,477 DEBUG devpinoyLogger:207 - Clicking on an Element : SHproduct_XPATH
+14:36:33,868 DEBUG devpinoyLogger:234 - Typing in an Element : PRquantity_XPATH entered value as : 1
+14:36:36,877 DEBUG devpinoyLogger:207 - Clicking on an Element : PRaddtocart_XPATH
+14:36:38,144 DEBUG devpinoyLogger:207 - Clicking on an Element : carttab_XPATH
+14:36:39,368 DEBUG devpinoyLogger:207 - Clicking on an Element : CAcheckoutbtn_XPATH
+14:36:39,811 DEBUG devpinoyLogger:234 - Typing in an Element : CHfname_XPATH entered value as : daniella
+14:36:40,093 DEBUG devpinoyLogger:234 - Typing in an Element : CHlname_XPATH entered value as : columbres
+14:36:40,298 DEBUG devpinoyLogger:234 - Typing in an Element : CHcompany_XPATH entered value as : xurpas
+14:36:40,376 DEBUG devpinoyLogger:253 - Selecting from an element : CHcountry_ID value as : Philippines
+14:36:40,600 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
+14:36:40,834 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
+14:36:41,081 DEBUG devpinoyLogger:234 - Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
+14:36:41,168 DEBUG devpinoyLogger:253 - Selecting from an element : CHregion_ID value as : Metro Manila
+14:36:41,389 DEBUG devpinoyLogger:234 - Typing in an Element : CHpostalcode_XPATH entered value as : 1552
+14:36:41,640 DEBUG devpinoyLogger:234 - Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
+14:36:42,101 DEBUG devpinoyLogger:234 - Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
+14:36:42,317 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
+14:36:44,519 DEBUG devpinoyLogger:207 - Clicking on an Element : CHplaceorderbtn_XPATH
+14:36:47,963 DEBUG devpinoyLogger:207 - Clicking on an Element : PFOpaynowbtn_XPATH
+14:36:50,385 DEBUG devpinoyLogger:207 - Clicking on an Element : EPeWallets_XPATH
+14:36:51,252 DEBUG devpinoyLogger:207 - Clicking on an Element : EPcoinsPH_XPATH
+14:36:51,380 DEBUG devpinoyLogger:207 - Clicking on an Element : EPproceedbtn_XPATH
+14:36:51,394 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+14:36:51,395 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+14:36:51,397 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+14:36:51,398 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+14:36:51,398 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:36:59,973 DEBUG devpinoyLogger:207 - Clicking on an Element : shoptab_XPATH
+14:37:00,938 DEBUG devpinoyLogger:207 - Clicking on an Element : SHproduct_XPATH
+14:37:01,297 DEBUG devpinoyLogger:234 - Typing in an Element : PRquantity_XPATH entered value as : 1
+14:37:04,341 DEBUG devpinoyLogger:207 - Clicking on an Element : PRaddtocart_XPATH
+14:37:05,626 DEBUG devpinoyLogger:207 - Clicking on an Element : carttab_XPATH
+14:37:06,676 DEBUG devpinoyLogger:207 - Clicking on an Element : CAcheckoutbtn_XPATH
+14:37:06,997 DEBUG devpinoyLogger:234 - Typing in an Element : CHfname_XPATH entered value as : daniella
+14:37:07,244 DEBUG devpinoyLogger:234 - Typing in an Element : CHlname_XPATH entered value as : columbres
+14:37:07,452 DEBUG devpinoyLogger:234 - Typing in an Element : CHcompany_XPATH entered value as : xurpas
+14:37:07,530 DEBUG devpinoyLogger:253 - Selecting from an element : CHcountry_ID value as : Philippines
+14:37:07,750 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
+14:37:08,087 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
+14:37:08,340 DEBUG devpinoyLogger:234 - Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
+14:37:08,426 DEBUG devpinoyLogger:253 - Selecting from an element : CHregion_ID value as : Metro Manila
+14:37:08,648 DEBUG devpinoyLogger:234 - Typing in an Element : CHpostalcode_XPATH entered value as : 1552
+14:37:08,937 DEBUG devpinoyLogger:234 - Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
+14:37:09,193 DEBUG devpinoyLogger:234 - Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
+14:37:09,397 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
+14:37:11,565 DEBUG devpinoyLogger:207 - Clicking on an Element : CHplaceorderbtn_XPATH
+14:37:15,235 DEBUG devpinoyLogger:207 - Clicking on an Element : PFOpaynowbtn_XPATH
+14:37:17,736 DEBUG devpinoyLogger:207 - Clicking on an Element : EPeWallets_XPATH
+14:37:18,680 DEBUG devpinoyLogger:207 - Clicking on an Element : EPgrabPay_XPATH
+14:37:18,881 DEBUG devpinoyLogger:207 - Clicking on an Element : EPproceedbtn_XPATH
+14:37:18,882 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+14:37:18,883 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+14:37:18,883 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+14:37:18,883 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+14:37:18,884 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:37:27,580 DEBUG devpinoyLogger:207 - Clicking on an Element : shoptab_XPATH
+14:37:28,507 DEBUG devpinoyLogger:207 - Clicking on an Element : SHproduct_XPATH
+14:37:28,831 DEBUG devpinoyLogger:234 - Typing in an Element : PRquantity_XPATH entered value as : 1
+14:37:32,272 DEBUG devpinoyLogger:207 - Clicking on an Element : PRaddtocart_XPATH
+14:37:32,445 DEBUG devpinoyLogger:207 - Clicking on an Element : carttab_XPATH
+14:37:49,763 DEBUG devpinoyLogger:207 - Clicking on an Element : CAcheckoutbtn_XPATH
+14:37:50,092 DEBUG devpinoyLogger:234 - Typing in an Element : CHfname_XPATH entered value as : daniella
+14:37:50,334 DEBUG devpinoyLogger:234 - Typing in an Element : CHlname_XPATH entered value as : columbres
+14:37:50,522 DEBUG devpinoyLogger:234 - Typing in an Element : CHcompany_XPATH entered value as : xurpas
+14:37:50,590 DEBUG devpinoyLogger:253 - Selecting from an element : CHcountry_ID value as : Philippines
+14:37:50,811 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
+14:37:51,065 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
+14:37:51,310 DEBUG devpinoyLogger:234 - Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
+14:37:51,395 DEBUG devpinoyLogger:253 - Selecting from an element : CHregion_ID value as : Metro Manila
+14:37:51,616 DEBUG devpinoyLogger:234 - Typing in an Element : CHpostalcode_XPATH entered value as : 1552
+14:37:51,863 DEBUG devpinoyLogger:234 - Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
+14:37:52,146 DEBUG devpinoyLogger:234 - Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
+14:37:52,360 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
+14:37:54,511 DEBUG devpinoyLogger:207 - Clicking on an Element : CHplaceorderbtn_XPATH
+14:37:57,985 DEBUG devpinoyLogger:207 - Clicking on an Element : PFOpaynowbtn_XPATH
+14:38:02,983 DEBUG devpinoyLogger:207 - Clicking on an Element : EPeWallets_XPATH
+14:38:03,870 DEBUG devpinoyLogger:207 - Clicking on an Element : EPunionPay_XPATH
+14:38:04,029 DEBUG devpinoyLogger:207 - Clicking on an Element : EPproceedbtn_XPATH
+14:38:04,030 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+14:38:04,031 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+14:38:04,032 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+14:38:04,033 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+14:38:04,033 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:38:12,747 DEBUG devpinoyLogger:207 - Clicking on an Element : shoptab_XPATH
+14:38:13,863 DEBUG devpinoyLogger:207 - Clicking on an Element : SHproduct_XPATH
+14:38:14,387 DEBUG devpinoyLogger:234 - Typing in an Element : PRquantity_XPATH entered value as : 1
+14:38:17,558 DEBUG devpinoyLogger:207 - Clicking on an Element : PRaddtocart_XPATH
+14:38:18,928 DEBUG devpinoyLogger:207 - Clicking on an Element : carttab_XPATH
+14:38:20,192 DEBUG devpinoyLogger:207 - Clicking on an Element : CAcheckoutbtn_XPATH
+14:38:20,476 DEBUG devpinoyLogger:234 - Typing in an Element : CHfname_XPATH entered value as : daniella
+14:38:20,699 DEBUG devpinoyLogger:234 - Typing in an Element : CHlname_XPATH entered value as : columbres
+14:38:20,921 DEBUG devpinoyLogger:234 - Typing in an Element : CHcompany_XPATH entered value as : xurpas
+14:38:20,995 DEBUG devpinoyLogger:253 - Selecting from an element : CHcountry_ID value as : Philippines
+14:38:21,227 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl1_XPATH entered value as : 13 San Pedro
+14:38:21,430 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddressl2_XPATH entered value as : Plainview
+14:38:21,690 DEBUG devpinoyLogger:234 - Typing in an Element : CHcity_XPATH entered value as : Mandaluyong City
+14:38:21,790 DEBUG devpinoyLogger:253 - Selecting from an element : CHregion_ID value as : Metro Manila
+14:38:21,992 DEBUG devpinoyLogger:234 - Typing in an Element : CHpostalcode_XPATH entered value as : 1552
+14:38:22,235 DEBUG devpinoyLogger:234 - Typing in an Element : CHphonenum_XPATH entered value as : 09669600049
+14:38:22,498 DEBUG devpinoyLogger:234 - Typing in an Element : CHemail_XPATH entered value as : daniella@gmail.com
+14:38:22,730 DEBUG devpinoyLogger:234 - Typing in an Element : CHaddinfo_XPATH entered value as : Helloooo
+14:38:24,921 DEBUG devpinoyLogger:207 - Clicking on an Element : CHplaceorderbtn_XPATH
+14:38:28,497 DEBUG devpinoyLogger:207 - Clicking on an Element : PFOpaynowbtn_XPATH
+14:38:31,308 DEBUG devpinoyLogger:207 - Clicking on an Element : EPeWallets_XPATH
+14:38:32,159 DEBUG devpinoyLogger:207 - Clicking on an Element : EPweChatPay_XPATH
+14:38:32,300 DEBUG devpinoyLogger:207 - Clicking on an Element : EPproceedbtn_XPATH
+14:38:32,301 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+14:38:32,301 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+14:38:32,301 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+14:38:32,302 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+14:38:32,302 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:38:41,379 DEBUG devpinoyLogger:207 - Clicking on an Element : shoptab_XPATH
+14:38:42,650 DEBUG devpinoyLogger:207 - Clicking on an Element : SHproduct_XPATH
+14:38:43,030 DEBUG devpinoyLogger:234 - Typing in an Element : PRquantity_XPATH entered value as : 1
+14:38:46,111 DEBUG devpinoyLogger:207 - Clicking on an Element : PRaddtocart_XPATH
+14:38:47,808 DEBUG devpinoyLogger:207 - Clicking on an Element : carttab_XPATH
+14:38:47,997 DEBUG devpinoyLogger:207 - Clicking on an Element : CAcheckoutbtn_XPATH
+14:39:09,030 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+14:39:09,031 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+14:39:09,031 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+14:39:09,032 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+14:39:09,032 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Daniella/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+14:39:20,582 DEBUG devpinoyLogger:207 - Clicking on an Element : shoptab_XPATH
+14:39:28,424 DEBUG devpinoyLogger:207 - Clicking on an Element : SHproduct_XPATH
+14:39:28,797 DEBUG devpinoyLogger:234 - Typing in an Element : PRquantity_XPATH entered value as : 1
+14:39:33,328 DEBUG devpinoyLogger:207 - Clicking on an Element : PRaddtocart_XPATH
+14:39:34,816 DEBUG devpinoyLogger:207 - Clicking on an Element : carttab_XPATH
+14:39:35,732 DEBUG devpinoyLogger:207 - Clicking on an Element : CAcheckoutbtn_XPATH
