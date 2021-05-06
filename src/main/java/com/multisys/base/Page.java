@@ -68,7 +68,7 @@ public class Page {
 			+ "excel" + File.separator + "testdata.xlsx";
 
 	public static TopMenu menu;
-
+	
 	static String getUserAppDirectory() {
 		String os = System.getProperty("os.name").toLowerCase();
 
@@ -298,7 +298,7 @@ public boolean isElementPresent(String locator) {
 	}
 
 	public static void newTab() throws InterruptedException, AWTException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_T);
@@ -319,4 +319,12 @@ public boolean isElementPresent(String locator) {
 		driver.get(finalurl);
 	}
 
+
+public static void verifyPayment(String paymentMethod) throws IOException, InterruptedException{
+	WebElement element = driver.findElement(By.xpath(OR.getProperty("PaymentMethod_XPATH")));
+	String pm = element.getText();
+	verifyEquals(paymentMethod, pm);
 }
+
+}
+

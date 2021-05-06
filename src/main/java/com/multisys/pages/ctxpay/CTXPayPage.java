@@ -23,12 +23,13 @@ public class CTXPayPage extends Page {
 		return new Ewallets();
 	}
 
-	public void cashPayment() {
+	public void cashPayment() throws InterruptedException {
 
 		click("CPcashpayments_XPATH");
 	
 		//Assert.assertTrue(isElementPresent("CPproceedbtn_XPATH"));
 		click("CPproceedbtn_XPATH");
+		Thread.sleep(3000);
 		
 		
 

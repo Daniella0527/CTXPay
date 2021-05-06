@@ -8,23 +8,15 @@
       <listener class-name="com.multisys.listeners.CustomListeners"/>
   </listeners>
   
-  	<test name="Happy Path">
+			<test name="Pay Thru Gcash">
 		<classes>
-			<class name="com.multisys.testcases.HappyPath" />			
+			<class name="com.multisys.testcases.ewallets.PayThruGcash" />			
 		</classes>
 	</test> <!-- Test -->
-  
 	
 	<test name="Pay Thru Cash">
 		<classes>
 			<class name="com.multisys.testcases.cash.PayThruCash" />			
-		</classes>
-	</test> <!-- Test -->
-	
-	
-	<test name="Pay Thru Gcash">
-		<classes>
-			<class name="com.multisys.testcases.ewallets.PayThruGcash" />			
 		</classes>
 	</test> <!-- Test -->
 	

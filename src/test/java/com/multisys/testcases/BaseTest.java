@@ -1,24 +1,20 @@
 package com.multisys.testcases;
 
-import java.awt.AWTException;
-
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
+import org.testng.SkipException;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
 import com.multisys.base.Page;
+import com.multisys.utilities.Utilities;
 
 
-public class BaseTest {
+public class BaseTest extends Page{
 	
 	
 	@AfterSuite
 	public void tearDown() throws InterruptedException{
+if (!Utilities.isTestRunnable("BaseTest", excel)) {
+			throw new SkipException("Skipping the test " + "BaseTest" + " as the Run mode is NO");
+		}
+		
 		Page.quit();
 		
 	}

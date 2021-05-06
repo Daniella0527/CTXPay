@@ -1,9 +1,14 @@
 package com.multisys.testcases.ewallets;
 
+import static org.testng.Assert.fail;
+
 import java.awt.AWTException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
@@ -41,12 +46,14 @@ public class PayThruGcash extends Page {
 		String url = Page.driver.getCurrentUrl();
 		Assert.assertTrue(url.contains(OR.getProperty("gcashsite")));
 		gcash.enterOTP();
-		SoftAssert softassert = new SoftAssert();
-		softassert.assertAll();
 		gcash.enterMPin();
-	}
+		gcash.payNow();
+	
+		verifyPayment("Gcash");
+}
 
 	
+
 	@AfterTest
 	public void openNewTab() throws InterruptedException, AWTException {
 		if (!Utilities.isTestRunnable("payThruGcash", excel)) {

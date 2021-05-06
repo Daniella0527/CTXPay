@@ -2,6 +2,8 @@ package com.multisys.testcases.cash;
 
 import java.awt.AWTException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
@@ -26,8 +28,11 @@ public class PayThruCash extends Page {
 
 		CTXPayPage ctx = new CTXPayPage();
 		ctx.cashPayment();
-		Assert.assertTrue(isElementPresent("CP_XPATH"));
+		
+		verifyPayment("Cash Payments");
 	}
+		
+	
 
 	@AfterTest
 	public void openNewTab() throws InterruptedException, AWTException {
