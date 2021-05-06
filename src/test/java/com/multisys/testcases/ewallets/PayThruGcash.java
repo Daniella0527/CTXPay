@@ -8,6 +8,8 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 import com.multisys.base.Page;
 import com.multisys.pages.ctxpay.CTXPayPage;
 import com.multisys.pages.ewallets.Ewallets;
@@ -38,8 +40,13 @@ public class PayThruGcash extends Page {
 
 		String url = Page.driver.getCurrentUrl();
 		Assert.assertTrue(url.contains(OR.getProperty("gcashsite")));
+		gcash.enterOTP();
+		SoftAssert softassert = new SoftAssert();
+		softassert.assertAll();
+		gcash.enterMPin();
 	}
 
+	
 	@AfterTest
 	public void openNewTab() throws InterruptedException, AWTException {
 		if (!Utilities.isTestRunnable("payThruGcash", excel)) {
