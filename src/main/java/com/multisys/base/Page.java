@@ -49,6 +49,7 @@ import com.multisys.utilities.ExcelReader;
 import com.multisys.utilities.ExtentManager;
 import com.multisys.utilities.Utilities;
 
+
 public class Page {
 
 	public static WebDriver driver;
@@ -100,8 +101,7 @@ public class Page {
 			try {
 				fis = new FileInputStream(System.getProperty("user.dir")
 						+ File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "com" + File.separator + "multisys" + File.separator + "properties" + File.separator + "Config.properties");
-				// System.setProperty("userApp.root", ad.getUserAppDirectory());
-
+	
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -142,18 +142,13 @@ public class Page {
 			config.setProperty("browser", browser);
 
 			if (config.getProperty("browser").equals("firefox")) {
-				// System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +
-				// "\\src\\test\\resources\\com\\multisys\\executables\\geckodriver.exe");
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 
 			} else if (config.getProperty("browser").equals("chrome")) {
 
 				WebDriverManager.chromedriver().setup();
-				
-				//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
-					//	+ "\\src\\test\\resources\\com\\multisys\\executables\\chromedriver.exe");
-
+			
 				Map<String, Object> prefs = new HashMap<String, Object>();
 				prefs.put("profile.default_content_setting_values.notifications", 2);
 				prefs.put("credentials_enable_service", false);
@@ -165,9 +160,6 @@ public class Page {
 
 				driver = new ChromeDriver(options);
 			} else if (config.getProperty("browser").equals("ie")) {
-
-				// System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") +
-				// "\\src\\test\\resources\\com\\multisys\\executables\\IEDriverServer.exe");
 
 				WebDriverManager.iedriver().setup();
 
@@ -357,3 +349,4 @@ public static void verifyPayment(String paymentMethod) throws IOException, Inter
 
 
 }
+

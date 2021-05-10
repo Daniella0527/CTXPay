@@ -15,36 +15,33 @@ import com.multisys.utilities.Utilities;
 
 public class PayThruGrabPay extends Page {
 
-@Test
-public void payThruAliPay() throws Exception {
+	@Test
+	public void payThruGrabPay() throws Exception {
 
-	if (!Utilities.isTestRunnable("payThruGrabPay", excel)) {
-		throw new SkipException("Skipping the test " + "payThruAliPay" + " as the Run mode is NO");
+		if (!Utilities.isTestRunnable("payThruGrabPay", excel)) {
+			throw new SkipException("Skipping the test " + "payThruGrabPay" + " as the Run mode is NO");
+		}
+
+		PlaceOrder order = new PlaceOrder();
+		order.addProductToCart();
+		order.checkout();
+		order.enterBillingAddress();
+
+		CTXPayPage ctx = new CTXPayPage();
+		Ewallets e = ctx.ewalletsPayment();
+		e.grabPay();
 	}
 
-	PlaceOrder order = new PlaceOrder();
-	order.addProductToCart();
-	order.checkout();
-	order.enterBillingAddress();
+	 @AfterTest
+		public void openNewTab() throws InterruptedException, AWTException {
+			 if (!Utilities.isTestRunnable("payThruGrabPay", excel)) {
+					throw new SkipException("Skipping the test " + "payThruGrabPay" + " as the Run mode is NO");
+				}
+			
+			newTab("testsiteurl");
+			
+			Assert.assertTrue(isElementPresent("hometab_XPATH"));
+		} 
 
-	CTXPayPage ctx = new CTXPayPage();
-	Ewallets e = ctx.ewalletsPayment();
-	e.grabPay();
-
-}
-
- @AfterTest
-	public void openNewTab() throws InterruptedException, AWTException {
-		 if (!Utilities.isTestRunnable("payThruGrabPay", excel)) {
-				throw new SkipException("Skipping the test " + "markPaymentAsPaid" + " as the Run mode is NO");
-			}
-		
-		Page.newTab("testsiteurl");
-		
-		Assert.assertTrue(isElementPresent("hometab_XPATH"));
-	} 
-
-}
-
-
+	}
 

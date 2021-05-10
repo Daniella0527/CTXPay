@@ -1,89 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Test Suite"> 
+<suite name="Test Suite">
 
-     <listeners>
-      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-      <listener class-name="com.multisys.listeners.CustomListeners"/>
-  </listeners>
-  
-			<test name="Pay Thru Gcash">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.multisys.listeners.CustomListeners" />
+	</listeners>
+
+	<test name="Pay Thru Gcash">
 		<classes>
-			<class name="com.multisys.testcases.ewallets.PayThruGcash" />			
+			<class name="com.multisys.testcases.ewallets.PayThruGcash" />
 		</classes>
-	</test> <!-- Test -->
-	
+	</test>
+
 	<test name="Pay Thru Cash">
 		<classes>
-			<class name="com.multisys.testcases.cash.PayThruCash" />			
+			<class name="com.multisys.testcases.cash.PayThruCash" />
 		</classes>
 	</test> <!-- Test -->
-	
+
 	<test name="Mark Cash Payment As Paid">
 		<classes>
-			<class name="com.multisys.testcases.cash.MarkPaymentAsPaid" />			
+			<class name="com.multisys.testcases.cash.MarkPaymentAsPaid" />
 		</classes>
 	</test> <!-- Test -->
 
-	
-		<test name="Pay Thru AllEasy">
+	<test name="Pay Thru AllEasy">
 		<classes>
-			<class name="com.multisys.testcases.ewallets.PayThruAllEasy" />			
+			<class name="com.multisys.testcases.ewallets.PayThruAllEasy" />
 		</classes>
 	</test> <!-- Test -->
-	
-			<test name="Pay Thru AliPay">
+
+	<test name="Pay Thru AliPay">
 		<classes>
-			<class name="com.multisys.testcases.ewallets.PayThruAliPay" />			
+			<class name="com.multisys.testcases.ewallets.PayThruAliPay" />
 		</classes>
 	</test> <!-- Test -->
-	
-			<test name="Pay Thru CoinsPH">
+
+
+	<test name="Pay Thru CoinsPH">
 		<classes>
-			<class name="com.multisys.testcases.ewallets.PayThruCoinsPH" />			
+			<class name="com.multisys.testcases.ewallets.PayThruCoinsPH" />
 		</classes>
-	</test> <!-- Test -->
-	
+	</test>
+
+
 	<test name="Pay Thru GrabPay">
 		<classes>
-			<class name="com.multisys.testcases.ewallets.PayThruGrabPay" />			
+			<class name="com.multisys.testcases.ewallets.PayThruGrabPay" />
 		</classes>
-	</test> <!-- Test -->
-	
-		<test name="Pay Thru UnionPay">
+	</test>
+	<!-- Test -->
+
+	<test name="Pay Thru UnionPay">
 		<classes>
-			<class name="com.multisys.testcases.ewallets.PayThruUnionPay" />			
+			<class name="com.multisys.testcases.ewallets.PayThruUnionPay" />
 		</classes>
-	</test> <!-- Test -->
-	
+	</test>
+
+	<!-- Test -->
 	<test name="Pay Thru WeChatPay">
 		<classes>
-			<class name="com.multisys.testcases.ewallets.PayThruWeChatPay" />			
+			<class name="com.multisys.testcases.ewallets.PayThruWeChatPay" />
 		</classes>
-	</test> <!-- Test -->
-	
-	
+	</test>
+
+
 	<test name="Pay Thru Visa">
 		<classes>
-			<class name="com.multisys.testcases.creditcard.PayThruVisa" />			
+			<class name="com.multisys.testcases.creditcard.PayThruVisa" />
 		</classes>
-	</test> <!-- Test -->
-	
+	</test>
+	<!-- Test -->
+
+
+
 	<test name="Pay Thru MasterCard">
 		<classes>
-			<class name="com.multisys.testcases.creditcard.PayThruMasterCard" />			
+			<class
+				name="com.multisys.testcases.creditcard.PayThruMasterCard" />
 		</classes>
-	</test> <!-- Test -->
-	
+	</test>
+
+
 	<test name="Base Test">
 		<classes>
-			<class name="com.multisys.testcases.BaseTest" />			
+			<class name="com.multisys.testcases.BaseTest" />
 		</classes>
 	</test> <!-- Test -->
 
-	  
-	
-	
+
+
+
 </suite> <!-- Suite -->
 

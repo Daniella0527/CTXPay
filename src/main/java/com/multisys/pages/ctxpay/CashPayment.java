@@ -10,6 +10,7 @@ public class CashPayment extends Page{
 	static String refNum;
 
 	public static void getRefNum(String locator) throws Exception {
+		Thread.sleep(3000);
 		refNum = getText(locator);
 		
 	}
