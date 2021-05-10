@@ -81,14 +81,14 @@ public class Page {
 		String os = System.getProperty("os.name").toLowerCase();
 
 		if (os.indexOf("nix") >= 0 || os.indexOf("nux") >= 0 || os.indexOf("mac") >= 0) {
-			return System.getProperty("user.home") + "\\src\\test\\resources\\com\\multisys\\";
+			return System.getProperty("user.home") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "com" + File.separator + "multisys" + File.separator ;
 
 		}
 		if (os.indexOf("win") >= 0) {
-			return System.getProperty("user.dir") + "\\src\\test\\resources\\com\\multisys\\";
+			return System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "com" + File.separator + "multisys" + File.separator;
 
 		} else
-			return System.getProperty("user.dir") + "\\src\\test\\resources\\com\\multisys\\";
+			return System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "com" + File.separator + "multisys" + File.separator;
 	}
 
 	public Page() {
@@ -99,7 +99,7 @@ public class Page {
 
 			try {
 				fis = new FileInputStream(System.getProperty("user.dir")
-						+ "\\src\\test\\resources\\com\\multisys\\properties\\Config.properties");
+						+ File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "com" + File.separator + "multisys" + File.separator + "properties" + File.separator + "Config.properties");
 				// System.setProperty("userApp.root", ad.getUserAppDirectory());
 
 			} catch (FileNotFoundException e) {
@@ -116,7 +116,7 @@ public class Page {
 
 			try {
 				fis = new FileInputStream(System.getProperty("user.dir")
-						+ "\\src\\test\\resources\\com\\multisys\\properties\\OR.properties");
+						+ File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "com" + File.separator + "multisys" + File.separator + "properties" + File.separator + "OR.properties");
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
