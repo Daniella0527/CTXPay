@@ -20,15 +20,22 @@
 		</classes>
 	</test> <!-- Test -->
 	
-	<test name="Pay Thru AliPay">
+	<test name="Mark Cash Payment As Paid">
 		<classes>
-			<class name="com.multisys.testcases.ewallets.PayThruAliPay" />			
+			<class name="com.multisys.testcases.cash.MarkPaymentAsPaid" />			
 		</classes>
 	</test> <!-- Test -->
+
 	
 		<test name="Pay Thru AllEasy">
 		<classes>
 			<class name="com.multisys.testcases.ewallets.PayThruAllEasy" />			
+		</classes>
+	</test> <!-- Test -->
+	
+			<test name="Pay Thru AliPay">
+		<classes>
+			<class name="com.multisys.testcases.ewallets.PayThruAliPay" />			
 		</classes>
 	</test> <!-- Test -->
 	

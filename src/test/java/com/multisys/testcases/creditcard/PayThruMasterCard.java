@@ -42,7 +42,7 @@ public class PayThruMasterCard extends Page {
 				throw new SkipException("Skipping the test " + "payThruMasterCard" + " as the Run mode is NO");
 			}
 		
-		Page.newTab();
+		Page.newTab("testsiteurl");
 		
 		Assert.assertTrue(isElementPresent("hometab_XPATH"));
 	} 

@@ -43,8 +43,8 @@ public class PayThruGcash extends Page {
 		GcashPage gcash = e.gcash();
 		gcash.enterNumber();
 
-		String url = Page.driver.getCurrentUrl();
-		Assert.assertTrue(url.contains(OR.getProperty("gcashsite")));
+		//String url = Page.driver.getCurrentUrl();
+		//Assert.assertTrue(url.contains(OR.getProperty("gcashsite")));
 		gcash.enterOTP();
 		gcash.enterMPin();
 		gcash.payNow();
@@ -59,7 +59,7 @@ public class PayThruGcash extends Page {
 		if (!Utilities.isTestRunnable("payThruGcash", excel)) {
 			throw new SkipException("Skipping the test " + "payThruGcash" + " as the Run mode is NO");
 		}
-		Page.newTab();
+		Page.newTab("testsiteurl");
 
 		Assert.assertTrue(isElementPresent("hometab_XPATH"));
 	}

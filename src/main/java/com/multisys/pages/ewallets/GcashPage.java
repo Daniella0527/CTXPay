@@ -23,13 +23,8 @@ public class GcashPage extends Page {
 		//ExcelApiTest eat = new ExcelApiTest(path);
 
 		//type("GOTP_XPATH", eat.getCellData(sheetName, "OTP", 2));
-		click("GOTP_XPATH");
-
-		Thread.sleep(1000);
 
 		Robot robot = new Robot();
-
-		robot.keyPress(KeyEvent.VK_8);
 		Thread.sleep(1000);
 		robot.keyPress(KeyEvent.VK_8);
 		Thread.sleep(1000);
@@ -40,14 +35,17 @@ public class GcashPage extends Page {
 		robot.keyPress(KeyEvent.VK_8);
 		Thread.sleep(1000);
 		robot.keyPress(KeyEvent.VK_8);
+		Thread.sleep(1000);
+		robot.keyPress(KeyEvent.VK_8);		
 
 		click("Gnextbtn2_XPATH");
 	}
 
 	public void enterMPin() throws Exception {
-		String sheetName = "payThruGcash";
-		ExcelApiTest eat = new ExcelApiTest(path);
-
+		//String sheetName = "payThruGcash";
+		//ExcelApiTest eat = new ExcelApiTest(path);
+		
+		
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_1);
 		Thread.sleep(1000);

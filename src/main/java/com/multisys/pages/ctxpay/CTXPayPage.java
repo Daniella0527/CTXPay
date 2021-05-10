@@ -1,9 +1,5 @@
 package com.multisys.pages.ctxpay;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-
 import com.multisys.base.Page;
 import com.multisys.pages.ewallets.Ewallets;
 
@@ -23,7 +19,7 @@ public class CTXPayPage extends Page {
 		return new Ewallets();
 	}
 
-	public void cashPayment() throws InterruptedException {
+	public CashPayment cashPayment() throws InterruptedException {
 
 		click("CPcashpayments_XPATH");
 	
@@ -31,9 +27,8 @@ public class CTXPayPage extends Page {
 		click("CPproceedbtn_XPATH");
 		Thread.sleep(3000);
 		
+		return new CashPayment();
 		
-
-
 	}
 
 	public void slctOtherPM() {

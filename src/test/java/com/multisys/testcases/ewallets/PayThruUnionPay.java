@@ -19,8 +19,9 @@ public class PayThruUnionPay extends Page {
 	public void payThruUnionPay() throws Exception {
 
 		if (!Utilities.isTestRunnable("payThruUnionPay", excel)) {
-			throw new SkipException("Skipping the test " + "payThruUnionPay" + " as the Run mode is NO");
+			throw new SkipException("Skipping the test " + "payThruAliPay" + " as the Run mode is NO");
 		}
+
 		PlaceOrder order = new PlaceOrder();
 		order.addProductToCart();
 		order.checkout();
@@ -32,13 +33,16 @@ public class PayThruUnionPay extends Page {
 
 	}
 
-	@AfterTest
-	public void openNewTab() throws InterruptedException, AWTException {
-		if (!Utilities.isTestRunnable("payThruUnionPay", excel)) {
-			throw new SkipException("Skipping the test " + "payThruUnionPay" + " as the Run mode is NO");
-		}
-		Page.newTab();
-		Assert.assertTrue(isElementPresent("hometab_XPATH"));
+	 @AfterTest
+		public void openNewTab() throws InterruptedException, AWTException {
+			 if (!Utilities.isTestRunnable("payThruUnionPay", excel)) {
+					throw new SkipException("Skipping the test " + "payThruUnionPay" + " as the Run mode is NO");
+				}
+			
+			Page.newTab("testsiteurl");
+			
+			Assert.assertTrue(isElementPresent("hometab_XPATH"));
+		} 
+
 	}
 
-}

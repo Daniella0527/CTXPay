@@ -6,7 +6,9 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,11 +18,16 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -48,6 +55,7 @@ public class Page {
 	public static Properties config = new Properties();
 	public static Properties OR = new Properties();
 	public static FileInputStream fis;
+	public static OutputStream fos;
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir") + File.separator + "src"
 			+ File.separator + "test" + File.separator + "resources" + File.separator + "com" + File.separator
@@ -63,7 +71,7 @@ public class Page {
 	public XSSFRow row;
 	public XSSFCell cell;
 
-	public String path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
+	public static String path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
 			+ File.separator + "resources" + File.separator + "com" + File.separator + "multisys" + File.separator
 			+ "excel" + File.separator + "testdata.xlsx";
 
@@ -141,8 +149,10 @@ public class Page {
 
 			} else if (config.getProperty("browser").equals("chrome")) {
 
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
-						+ "\\src\\test\\resources\\com\\multisys\\executables\\chromedriver.exe");
+				WebDriverManager.chromedriver().setup();
+				
+				//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
+					//	+ "\\src\\test\\resources\\com\\multisys\\executables\\chromedriver.exe");
 
 				Map<String, Object> prefs = new HashMap<String, Object>();
 				prefs.put("profile.default_content_setting_values.notifications", 2);
@@ -171,7 +181,7 @@ public class Page {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);
-			wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
 			menu = new TopMenu(driver);
 		}
@@ -184,6 +194,24 @@ public class Page {
 	}
 
 	// Common Keywords
+	
+	public static String getText(String locator) {
+		WebElement element;
+		 String text = new String();
+
+		if (locator.endsWith("_XPATH")) {
+			element = driver.findElement(By.xpath(OR.getProperty(locator)));
+			wait.until(ExpectedConditions.visibilityOf(element));
+			text = element.getText();
+		}
+
+		log.debug("Copying text on an Element : " + locator);
+		test.log(LogStatus.INFO, "Copying text on : " + locator);
+		return text;
+
+	}
+	
+	
 	public static void click(String locator) {
 		WebElement element;
 
@@ -297,16 +325,17 @@ public boolean isElementPresent(String locator) {
 
 	}
 
-	public static void newTab() throws InterruptedException, AWTException {
+	public static void newTab(String url) throws InterruptedException, AWTException {
 		Thread.sleep(2000);
+		
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_T);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 		robot.keyRelease(KeyEvent.VK_T);
 		Thread.sleep(1000);
-		String finalurl = config.getProperty("testsiteurl");
-
+		String finalurl = config.getProperty(url);
+		
 		Set<String> handles = driver.getWindowHandles();
 		List<String> handlesList = new ArrayList<String>(handles);
 		String newTab = handlesList.get(handlesList.size() - 1);
@@ -326,5 +355,5 @@ public static void verifyPayment(String paymentMethod) throws IOException, Inter
 	verifyEquals(paymentMethod, pm);
 }
 
-}
 
+}

@@ -33,14 +33,17 @@ public class PayThruAliPay extends Page {
 
 	}
 
-	@AfterTest
-	public void openNewTab() throws InterruptedException, AWTException {
-		if (!Utilities.isTestRunnable("payThruAliPay", excel)) {
-			throw new SkipException("Skipping the test " + "payThruAliPay" + " as the Run mode is NO");
-		}
-		Page.newTab();
+	 @AfterTest
+		public void openNewTab() throws InterruptedException, AWTException {
+			 if (!Utilities.isTestRunnable("payThruAliPay", excel)) {
+					throw new SkipException("Skipping the test " + "payThruAliPay" + " as the Run mode is NO");
+				}
+			
+			newTab("testsiteurl");
+			
+			Assert.assertTrue(isElementPresent("hometab_XPATH"));
+		} 
 
-		Assert.assertTrue(isElementPresent("hometab_XPATH"));
 	}
 
-}
+

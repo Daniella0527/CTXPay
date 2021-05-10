@@ -37,7 +37,7 @@ public class PayThruCoinsPH extends Page {
 		if (!Utilities.isTestRunnable("payThruCoinsPH", excel)) {
 			throw new SkipException("Skipping the test " + "payThruCoinsPH" + " as the Run mode is NO");
 		}
-		Page.newTab();
+		Page.newTab("testsiteurl");
 		Assert.assertTrue(isElementPresent("hometab_XPATH"));
 	}
 

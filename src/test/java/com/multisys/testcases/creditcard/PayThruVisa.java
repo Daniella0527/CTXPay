@@ -41,7 +41,7 @@ public class PayThruVisa extends Page {
 		if (!Utilities.isTestRunnable("payThruVisa", excel)) {
 			throw new SkipException("Skipping the test " + "payThruVisa" + " as the Run mode is NO");
 		}
-		Page.newTab();
+		Page.newTab("testsiteurl");
 		Assert.assertTrue(isElementPresent("hometab_XPATH"));
 	}
 

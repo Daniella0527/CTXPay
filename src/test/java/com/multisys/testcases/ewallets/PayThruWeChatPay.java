@@ -36,7 +36,7 @@ public class PayThruWeChatPay extends Page {
 		if (!Utilities.isTestRunnable("payThruWeChatPay", excel)) {
 			throw new SkipException("Skipping the test " + "payThruWeChatPay" + " as the Run mode is NO");
 		}
-		Page.newTab();
+		Page.newTab("testsiteurl");
 		Assert.assertTrue(isElementPresent("hometab_XPATH"));
 	}
 

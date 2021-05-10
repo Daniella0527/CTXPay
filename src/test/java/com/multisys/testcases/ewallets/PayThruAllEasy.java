@@ -38,7 +38,7 @@ public class PayThruAllEasy extends Page {
 		if (!Utilities.isTestRunnable("payThruAllEasy", excel)) {
 			throw new SkipException("Skipping the test " + "payThruAllEasy" + " as the Run mode is NO");
 		}
-		Page.newTab();
+		Page.newTab("testsiteurl");
 		Assert.assertTrue(isElementPresent("hometab_XPATH"));
 	}
 
