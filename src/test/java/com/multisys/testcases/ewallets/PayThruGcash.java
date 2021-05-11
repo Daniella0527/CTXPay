@@ -21,6 +21,7 @@ import com.multisys.pages.ewallets.Ewallets;
 import com.multisys.pages.ewallets.GcashPage;
 import com.multisys.testcases.PlaceOrder;
 import com.multisys.utilities.Utilities;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class PayThruGcash extends Page {
 
@@ -50,10 +51,9 @@ public class PayThruGcash extends Page {
 		gcash.payNow();
 	
 		verifyPayment("Gcash");
-}
 
-	
-
+		
+	}
 	@AfterTest
 	public void openNewTab() throws InterruptedException, AWTException {
 		if (!Utilities.isTestRunnable("payThruGcash", excel)) {

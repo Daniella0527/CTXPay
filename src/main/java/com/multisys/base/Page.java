@@ -173,7 +173,7 @@ public class Page {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);
-			wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			wait = new WebDriverWait(driver, Duration.ofSeconds(7));
 
 			menu = new TopMenu(driver);
 		}
@@ -231,7 +231,7 @@ public class Page {
 	public static void type(String locator, String value) {
 		WebElement element;
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(58888));
 		if (locator.endsWith("_CSS")) {
 			element = driver.findElement(By.cssSelector(OR.getProperty(locator)));
 			wait.until(ExpectedConditions.visibilityOf(element));
